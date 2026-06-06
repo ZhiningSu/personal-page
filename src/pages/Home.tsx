@@ -1,6 +1,7 @@
 import AboutSection from '@/components/AboutSection'
 import ContactSection from '@/components/ContactSection'
 import HeroSection from '@/components/HeroSection'
+import InterestsSection from '@/components/InterestsSection'
 import Navigation from '@/components/Navigation'
 import NewsSection from '@/components/NewsSection'
 import TimelineSection from '@/components/TimelineSection'
@@ -15,6 +16,7 @@ export default function Home() {
         <AboutSection />
         <TimelineSection />
         <WorksSection />
+        <InterestsSection />
         <NewsSection />
         <ContactSection />
       </main>
