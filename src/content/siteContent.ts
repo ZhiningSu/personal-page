@@ -60,183 +60,176 @@ export type SiteContent = {
 }
 
 const workImageA =
-  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=editorial%20photograph%20of%20a%20futuristic%20robotics%20research%20studio%2C%20warm%20paper%20tones%2C%20architectural%20composition%2C%20soft%20cinematic%20light%2C%20magazine%20cover%20quality&image_size=landscape_16_9'
+  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=academic%20research%20visualization%20of%20financial%20markets%2C%20minimal%20editorial%20layout%2C%20clean%20charts%2C%20soft%20neutral%20lighting%2C%20scholarly%20website%20hero%20image&image_size=landscape_16_9'
 
 const workImageB =
-  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=refined%20editorial%20workspace%20with%20printed%20essays%2C%20laptop%2C%20notebooks%2C%20quiet%20museum-like%20lighting%2C%20high-end%20design%20photography&image_size=landscape_16_9'
+  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=clean%20academic%20workspace%20for%20agent%20research%2C%20papers%2C%20laptop%2C%20whiteboard%20notes%2C%20minimal%20scholarly%20composition%2C%20natural%20light&image_size=landscape_16_9'
 
 const workImageC =
-  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=minimal%20technology%20installation%20with%20glass%20panels%2C%20soft%20metal%20accents%2C%20luxury%20editorial%20lighting%2C%20clean%20spatial%20composition&image_size=landscape_16_9'
+  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=minimal%20research%20diagram%20for%20world%20models%20and%20decision%20making%2C%20financial%20state%20transitions%2C%20simple%20academic%20visual%20language%2C%20clean%20background&image_size=landscape_16_9'
 
 export const siteContent: SiteContent = {
   profile: {
-    name: 'YOUR NAME',
-    title: '研究者 / 设计工程师 / 创作者',
-    statement: '我把复杂技术翻译成可阅读、可感知、可被记住的作品。',
+    name: 'Yanda Su',
+    title: 'Independent Researcher',
+    statement:
+      'I am an independent researcher working on world models, agents, and computational approaches to understanding complex financial systems.',
     summary:
-      '一个适合长期更新的现代个人主页模板，介于学术主页、作品集与个人出版物之间。',
-    location: 'Shanghai / Remote',
-    email: 'hello@yourname.com',
-    availability: '开放合作、顾问咨询、演讲邀约',
+      'I received my M.Fin. degree from Xiamen University and currently focus on building realistic, mechanism-aware models for reasoning, simulation, and decision making in finance.',
+    location: 'Xiamen / Remote',
+    email: 'yandasu.su@gmail.com',
+    availability: 'Open to research collaboration and academic discussion',
   },
   socialLinks: [
-    { label: '简历', href: '#contact', type: 'primary' },
-    { label: '邮箱', href: 'mailto:hello@yourname.com', type: 'primary' },
-    { label: 'GitHub', href: 'https://github.com/', type: 'secondary' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/', type: 'secondary' },
-    { label: 'X', href: 'https://x.com/', type: 'secondary' },
+    { label: 'Email', href: 'mailto:yandasu.su@gmail.com', type: 'primary' },
   ],
   about: [
-    '这是一种更克制的个人表达方式：不靠夸张动效取胜，而靠内容结构、排版节奏与细节质感建立信任。首页既像研究者主页，也像一本可以滚动阅读的个人杂志。',
-    '你可以把它用作求职主页、学术主页、创业者介绍页，或长期维护的线上名片。所有文本、经历、项目与链接都集中在一个内容文件中，后续替换十分直接。',
-    '视觉上采用纸张质感、衬线标题、细线边框与低饱和金属强调色，既接近你给出的参考网站，又比它更现代、更有品牌感。',
+    'My research interest lies at the intersection of world models, agentic systems, and financial intelligence. I am especially interested in how models can learn not only to predict outcomes, but also to approximate the underlying mechanisms that generate financial dynamics.',
+    'Rather than treating finance as a pure forecasting problem, I view it as a structured decision environment with latent states, evolving constraints, and interacting agents. This motivates a modeling paradigm that is closer to simulation, reasoning, and strategy evaluation than to point prediction alone.',
+    'My current work explores how a model can build an internal representation of the financial world, roll forward plausible trajectories, compare candidate decisions, and identify higher-quality strategies under realistic assumptions.',
   ],
   timeline: [
     {
-      year: '2026',
-      title: 'Lead Creative Technologist',
-      organization: 'Independent Studio',
-      description: '围绕生成式 AI、交互叙事与个人品牌体验，构建高完成度数字作品。',
+      year: 'Present',
+      title: 'Independent Researcher',
+      organization: 'World Models and Agents',
+      description:
+        'Conducting independent research on world models, agent-based reasoning, and simulation-driven decision making for financial environments.',
     },
     {
-      year: '2024',
-      title: 'Design Engineer',
-      organization: 'Applied AI Team',
-      description: '负责前端系统、实验型交互原型与内容驱动型产品体验的设计开发。',
+      year: 'Graduate Study',
+      title: 'Master of Finance',
+      organization: 'Xiamen University',
+      description:
+        'Completed graduate training in finance with a strong interest in connecting quantitative modeling, market structure, and intelligent decision systems.',
     },
     {
-      year: '2022',
-      title: 'Research Fellow',
-      organization: 'Human-Computer Futures Lab',
-      description: '关注技术传播、阅读体验与界面系统如何共同塑造理解方式。',
-    },
-    {
-      year: '2019',
-      title: 'B.Eng. / Self-Directed Maker',
-      organization: 'Open Projects & Writing',
-      description: '从编码、写作到视觉设计，逐步形成跨学科的个人表达方法。',
+      year: 'Focus',
+      title: 'Research Themes',
+      organization: 'Mechanistic Financial Modeling',
+      description:
+        'Focusing on world models, agents, simulation-based reasoning, and mechanism-aware modeling for better understanding financial systems.',
     },
   ],
   works: [
     {
-      slug: 'embodied-atlas',
-      title: 'Embodied Atlas',
-      subtitle: '一个面向机器人与具身智能叙事的展示型项目页系统',
-      year: '2026',
-      tags: ['Research', 'Robotics', 'Editorial UI'],
+      slug: 'financial-world-model',
+      title: 'Financial World Model',
+      subtitle: 'A world-modeling framework for reasoning about latent market dynamics',
+      year: 'Current',
+      tags: ['World Models', 'Finance', 'Simulation'],
       summary:
-        '把复杂研究内容组织成清晰、可信、适合公开传播的视觉叙事页面，让专业成果更容易被非专业观众理解。',
+        'This project explores how to learn a compact internal model of the financial world that can simulate plausible future trajectories instead of producing only one-step forecasts.',
       coverImage: workImageA,
       links: [
-        { label: '查看详情', href: '/work/embodied-atlas' },
-        { label: '外部链接', href: 'https://example.com/' },
+        { label: 'View details', href: '/work/financial-world-model' },
       ],
       content: [
         {
           type: 'paragraph',
           value:
-            'Embodied Atlas 将研究项目、系统结构、实验结果与公开视频重新组织为一种更可读的网络出版物形式，重点不是堆叠信息，而是帮助读者快速理解核心问题与关键贡献。',
+            'The central idea is to model finance as a partially observed dynamical system. Instead of optimizing only for predictive accuracy, the goal is to learn a model that better reflects how the financial world evolves under changing states, interactions, and constraints.',
         },
         {
           type: 'quote',
-          value: '好的研究传播，不只是准确，更要让外部世界愿意继续读下去。',
-          label: '项目主张',
+          value:
+            'A useful financial model should not only predict what may happen next, but also represent why different futures become plausible.',
+          label: 'Research premise',
         },
         {
           type: 'metric',
-          value: '12 个模块化内容区块',
-          label: '信息组织密度',
+          value: 'State -> Simulation -> Evaluation',
+          label: 'Core pipeline',
         },
         {
           type: 'image',
           value: workImageA,
-          label: '研究展示页视觉概念图',
+          label: 'Concept illustration',
         },
       ],
     },
     {
-      slug: 'signal-garden',
-      title: 'Signal Garden',
-      subtitle: '一套用于长期写作与观点沉淀的个人内容花园',
-      year: '2025',
-      tags: ['Writing', 'Archive', 'Knowledge Design'],
+      slug: 'strategy-search',
+      title: 'Strategy Search in Simulated Markets',
+      subtitle: 'Evaluating candidate actions by rolling out future paths inside a learned world model',
+      year: 'Current',
+      tags: ['Agents', 'Planning', 'Decision Making'],
       summary:
-        '将零散文章、演讲记录和研究札记沉淀为一个可持续更新、可被检索、也值得反复阅读的内容档案。',
+        'Inspired by the planning logic behind Dreamer-style systems, this line of work studies how an agent can imagine multiple possible financial trajectories and search for higher-scoring strategies.',
       coverImage: workImageB,
       links: [
-        { label: '查看详情', href: '/work/signal-garden' },
-        { label: '阅读摘要', href: 'https://example.com/' },
+        { label: 'View details', href: '/work/strategy-search' },
       ],
       content: [
         {
           type: 'paragraph',
           value:
-            'Signal Garden 的重点在于“内容节奏设计”：短讯息、长文章、摘录与主题索引都拥有不同的阅读界面，但又能保持统一的审美和路径。',
+            'The emphasis here is not to output a single prediction, but to evaluate candidate strategies by simulating different futures, comparing outcomes, and selecting decisions that remain strong across realistic scenarios.',
         },
         {
           type: 'metric',
-          value: '3 层内容结构',
-          label: '快讯 / 长文 / 索引',
+          value: 'Top-scoring path search',
+          label: 'Decision objective',
         },
         {
           type: 'quote',
-          value: '个人主页不一定只是名片，也可以是一个持续生长的思想场所。',
-          label: '核心理念',
+          value:
+            'The point of planning is not to guess one future perfectly, but to search over many possible futures and act on the best robust strategy.',
+          label: 'Planning view',
         },
         {
           type: 'image',
           value: workImageB,
-          label: '内容档案系统视觉概念图',
+          label: 'Agent planning illustration',
         },
       ],
     },
     {
-      slug: 'northstar-os',
-      title: 'Northstar OS',
-      subtitle: '为个人品牌和小团队构建的一致性设计系统',
-      year: '2024',
-      tags: ['Design System', 'Frontend', 'Brand Surface'],
+      slug: 'mechanistic-finance',
+      title: 'Mechanism-Aware Financial Intelligence',
+      subtitle: 'Toward models that explain and approximate how the financial world operates',
+      year: 'Current',
+      tags: ['Mechanisms', 'Financial Systems', 'Interpretability'],
       summary:
-        '通过统一的色彩、排版、组件和语气规则，让网站、简历、演示稿和社交物料形成稳定的品牌感。',
+        'This project investigates how to move beyond surface-level prediction and toward models that better recover the operating logic of financial systems for interpretation, understanding, and analysis.',
       coverImage: workImageC,
       links: [
-        { label: '查看详情', href: '/work/northstar-os' },
-        { label: '系统说明', href: 'https://example.com/' },
+        { label: 'View details', href: '/work/mechanistic-finance' },
       ],
       content: [
         {
           type: 'paragraph',
           value:
-            'Northstar OS 是一个视觉与前端实现一体化的系统，目标不是生成一套“能用”的组件，而是生成一整套“能被识别”的数字表面。',
+            'A core belief behind this work is that accurate prediction alone is insufficient. A stronger research agenda is to model the mechanisms of the financial world more faithfully so that the resulting system can support explanation, reasoning, and deeper understanding.',
         },
         {
           type: 'metric',
-          value: '24 个品牌语义变量',
-          label: '主题扩展能力',
+          value: 'Prediction + Understanding',
+          label: 'Research goal',
         },
         {
           type: 'quote',
-          value: '稳定的美学语法，会让一个人或一个团队看起来更像自己。',
-          label: '设计原则',
+          value:
+            'The long-term value of financial intelligence lies not only in forecasting outcomes, but in recovering the structure of the world that produces them.',
+          label: 'Core view',
         },
         {
           type: 'image',
           value: workImageC,
-          label: '设计系统视觉概念图',
+          label: 'Mechanism modeling illustration',
         },
       ],
     },
   ],
   news: [
-    { date: '05 / 2026', content: '发布个人主页新版视觉系统，加入作品详情页与内容配置化结构。' },
-    { date: '03 / 2026', content: '开始整理长期写作与公开演讲记录，准备扩展文章归档模块。' },
-    { date: '11 / 2025', content: '完成一次围绕“技术与叙事”的公开分享，并将演讲材料纳入站点。' },
-    { date: '08 / 2025', content: '重构项目展示方式，从传统卡片列表升级为更具编辑感的叙事结构。' },
+    { date: '2026', content: 'Building a personal research page focused on world models, agents, and finance.' },
+    { date: '2026', content: 'Organizing current projects around simulation, planning, and mechanism-aware modeling.' },
+    { date: '2026', content: 'Preparing a clearer research narrative that connects financial modeling with agent-based reasoning.' },
   ],
-  themes: ['生成式 AI', '前端系统', '交互叙事', '研究传播', '长期写作', '设计工程'],
+  themes: ['World Models', 'Agents', 'Financial Systems', 'Simulation', 'Planning', 'Mechanism-Aware Modeling'],
   metrics: [
-    { value: '10+', label: '年持续创作', detail: '编码、写作、视觉并行发展' },
-    { value: '03', label: '代表方向', detail: '研究、产品、内容系统' },
-    { value: '24h', label: '响应速度', detail: '对合作沟通保持高效率反馈' },
+    { value: 'M.Fin.', label: 'Education', detail: 'Xiamen University' },
+    { value: '3', label: 'Current themes', detail: 'World models, agents, and finance' },
+    { value: 'Open', label: 'Status', detail: 'Research collaboration and discussion' },
   ],
 }

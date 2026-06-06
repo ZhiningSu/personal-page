@@ -5,14 +5,14 @@
 @tailwind utilities;
 
 :root {
-  --paper: #f4efe8;
-  --paper-strong: #ede4d8;
-  --ink: #151312;
-  --muted: #5c5954;
-  --line: rgba(21, 19, 18, 0.14);
-  --accent: #8f6f4f;
-  --accent-soft: rgba(143, 111, 79, 0.14);
-  --shadow: 0 24px 60px rgba(27, 20, 14, 0.08);
+  --paper: #f7f5f1;
+  --paper-strong: #efebe4;
+  --ink: #171717;
+  --muted: #595959;
+  --line: rgba(23, 23, 23, 0.12);
+  --accent: #3f5f7a;
+  --accent-soft: rgba(63, 95, 122, 0.1);
+  --shadow: 0 14px 36px rgba(20, 20, 20, 0.05);
   --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC',
     'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   --font-display: 'Bodoni Moda', 'Iowan Old Style', 'Times New Roman', serif;
@@ -34,10 +34,6 @@ html {
 body {
   min-height: 100vh;
   background-color: var(--paper);
-  background-image:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.85), transparent 32%),
-    linear-gradient(135deg, rgba(143, 111, 79, 0.08), transparent 40%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0));
   color: var(--ink);
 }
 
@@ -46,12 +42,8 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.012) 1px, transparent 1px),
-    linear-gradient(rgba(0, 0, 0, 0.012) 1px, transparent 1px);
-  background-size: auto, 32px 32px, 32px 32px;
-  opacity: 0.45;
+  background-image: none;
+  opacity: 0;
   z-index: 0;
 }
 
@@ -88,21 +80,8 @@ img {
 
 @layer components {
   .paper-panel {
-    @apply rounded-[2rem] border border-black/10 bg-white/70 backdrop-blur-sm;
+    @apply rounded-none border border-black/10 bg-transparent;
     box-shadow: var(--shadow);
-  }
-
-  .grain-border {
-    position: relative;
-  }
-
-  .grain-border::after {
-    content: '';
-    position: absolute;
-    inset: 10px;
-    border: 1px solid rgba(21, 19, 18, 0.08);
-    border-radius: inherit;
-    pointer-events: none;
   }
 
   .serif-display {
@@ -111,11 +90,6 @@ img {
 
   .eyebrow {
     @apply mb-4 inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.36em] text-black/55;
-  }
-
-  .eyebrow::before {
-    content: '';
-    @apply h-px w-8 bg-black/20;
   }
 
   .section-anchor {

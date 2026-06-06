@@ -25,7 +25,7 @@ function renderBlock(type: string, value: string, label?: string) {
   if (type === 'image') {
     return (
       <figure className="overflow-hidden rounded-[1.75rem] border border-black/10 bg-white/75">
-        <img src={value} alt={label ?? '项目图片'} className="aspect-[16/10] w-full object-cover" />
+        <img src={value} alt={label ?? 'Project image'} className="aspect-[16/10] w-full object-cover" />
         {label ? <figcaption className="px-5 py-4 text-sm text-black/52">{label}</figcaption> : null}
       </figure>
     )
@@ -44,10 +44,10 @@ export default function WorkDetail() {
       <main className="mx-auto flex min-h-screen max-w-3xl items-center px-6 py-20">
         <div className="paper-panel w-full p-10 text-center">
           <p className="text-xs uppercase tracking-[0.28em] text-black/45">Not Found</p>
-          <h1 className="mt-4 text-4xl text-black">未找到对应作品</h1>
+          <h1 className="mt-4 text-4xl text-black">Research item not found</h1>
           <Link to="/" className="link-underline mt-6 inline-flex items-center gap-2 text-sm font-semibold text-black">
             <ArrowLeft className="h-4 w-4" />
-            返回首页
+            Back to home
           </Link>
         </div>
       </main>
@@ -68,7 +68,7 @@ export default function WorkDetail() {
         <div className="border-b border-black/10 p-6 sm:p-8">
           <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-black/62 transition hover:text-black">
             <ArrowLeft className="h-4 w-4" />
-            返回首页
+            Back to home
           </Link>
         </div>
 
@@ -135,7 +135,7 @@ export default function WorkDetail() {
         <div className="grid gap-4 border-t border-black/10 p-6 sm:grid-cols-2 sm:p-8">
           {previous ? (
             <Link to={`/work/${previous.slug}`} className="rounded-[1.5rem] border border-black/10 p-5 text-sm text-black/62 transition hover:bg-black hover:text-white">
-              ← 上一项 · {previous.title}
+              ← Previous · {previous.title}
             </Link>
           ) : (
             <div />
@@ -145,7 +145,7 @@ export default function WorkDetail() {
               to={`/work/${next.slug}`}
               className="rounded-[1.5rem] border border-black/10 p-5 text-right text-sm text-black/62 transition hover:bg-black hover:text-white"
             >
-              下一项 · {next.title} →
+              Next · {next.title} →
             </Link>
           ) : null}
         </div>

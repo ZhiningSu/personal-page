@@ -6,10 +6,10 @@ type SectionHeaderProps = {
 
 export default function SectionHeader({ index, title, description }: SectionHeaderProps) {
   return (
-    <div className="mb-10 max-w-2xl">
-      <span className="eyebrow">Section {index}</span>
-      <h2 className="text-4xl text-black sm:text-5xl">{title}</h2>
-      <p className="mt-4 max-w-xl text-sm leading-7 text-black/65 sm:text-[15px]">{description}</p>
+    <div className="mb-8 max-w-3xl">
+      <p className="mb-2 text-xs uppercase tracking-[0.24em] text-black/38">{index}</p>
+      <h2 className="text-3xl text-black sm:text-[2rem]">{title}</h2>
+      <p className="mt-3 max-w-2xl text-sm leading-7 text-black/62 sm:text-[15px]">{description}</p>
     </div>
   )
 }
