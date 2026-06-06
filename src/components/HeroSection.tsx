@@ -6,18 +6,23 @@ export default function HeroSection() {
   return (
     <section id="top" className="section-anchor pt-4">
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
-        <Reveal className="space-y-7">
+        <Reveal className="space-y-7 lg:col-span-2">
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-black/40">{siteContent.profile.title}</p>
+            <p className="text-center text-sm uppercase tracking-[0.24em] text-black/40">{siteContent.profile.title}</p>
           </div>
 
           <div className="space-y-5">
-            <h1 className="max-w-4xl text-5xl leading-tight text-black sm:text-6xl lg:text-[4.5rem]">{siteContent.profile.name}</h1>
-            <p className="max-w-3xl text-base leading-8 text-black/70 sm:text-lg">{siteContent.profile.statement}</p>
-            <p className="max-w-3xl text-[15px] leading-8 text-black/58">{siteContent.profile.summary}</p>
+            <h1
+              className="mx-auto max-w-4xl text-center text-4xl leading-tight text-black sm:text-5xl lg:text-[3.7rem]"
+              style={{ fontFamily: '"Times New Roman", Times, serif' }}
+            >
+              {siteContent.profile.name}
+            </h1>
+            <p className="mx-auto max-w-3xl text-center text-base leading-8 text-black/70 sm:text-lg">{siteContent.profile.statement}</p>
+            <p className="mx-auto max-w-3xl text-center text-[15px] leading-8 text-black/58">{siteContent.profile.summary}</p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-5 text-sm">
+          <div className="flex flex-wrap items-center justify-center gap-5 text-sm">
             <a href="#works" className="inline-flex items-center gap-2 font-semibold text-black/78 transition hover:text-black">
               View research
               <ArrowRight className="h-4 w-4" />
@@ -30,7 +35,7 @@ export default function HeroSection() {
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-x-6 gap-y-3 border-t border-black/10 pt-6 text-sm text-black/60">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 border-t border-black/10 pt-6 text-sm text-black/60">
             <span className="inline-flex items-center gap-2">
               <MapPin className="h-4 w-4" />
               {siteContent.profile.location}
@@ -40,7 +45,7 @@ export default function HeroSection() {
         </Reveal>
 
         <Reveal delay={0.15}>
-          <div className="space-y-6 border-l border-black/10 pl-0 lg:pl-8">
+          <div className="mx-auto hidden max-w-md space-y-6 border-t border-black/10 pt-8 lg:block lg:w-full lg:max-w-none lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
             <p className="text-xs uppercase tracking-[0.24em] text-black/40">Overview</p>
             <div className="grid gap-4">
               {siteContent.metrics.map((metric) => (

@@ -40,6 +40,14 @@ export type MetricItem = {
   detail: string
 }
 
+export type InterestItem = {
+  year: string
+  title: string
+  description: string
+  posterImage: string
+  videoHref: string
+}
+
 export type SiteContent = {
   profile: {
     name: string
@@ -57,6 +65,7 @@ export type SiteContent = {
   news: NewsItem[]
   themes: string[]
   metrics: MetricItem[]
+  interests: InterestItem[]
 }
 
 const workImageA =
@@ -67,6 +76,15 @@ const workImageB =
 
 const workImageC =
   'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=minimal%20research%20diagram%20for%20world%20models%20and%20decision%20making%2C%20financial%20state%20transitions%2C%20simple%20academic%20visual%20language%2C%20clean%20background&image_size=landscape_16_9'
+
+const interestImageA =
+  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=minimal%20editorial%20film%20still%20for%20video%20making%2C%20clean%20framing%2C%20subtle%20motion%20composition%2C%20academic%20portfolio%20style&image_size=landscape_16_9'
+
+const interestImageB =
+  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=minimal%20photography%20contact%20sheet%20style%2C%20clean%20gallery%20layout%2C%20soft%20light%2C%20editorial%20portfolio%20aesthetic&image_size=landscape_16_9'
+
+const interestImageC =
+  'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=minimal%20music%20studio%20editorial%20visual%2C%20vinyl%20records%20and%20headphones%2C%20clean%20composition%2C%20muted%20scholarly%20website%20style&image_size=landscape_16_9'
 
 export const siteContent: SiteContent = {
   profile: {
@@ -102,6 +120,13 @@ export const siteContent: SiteContent = {
       organization: 'Xiamen University',
       description:
         'Completed graduate training in finance with a strong interest in connecting quantitative modeling, market structure, and intelligent decision systems.',
+    },
+    {
+      year: 'Undergraduate',
+      title: 'B.A. in Finance',
+      organization: 'Southwestern University of Finance and Economics',
+      description:
+        'Built my early academic foundation in finance and developed a long-term interest in financial systems, modeling, and decision making.',
     },
     {
       year: 'Focus',
@@ -231,5 +256,31 @@ export const siteContent: SiteContent = {
     { value: 'M.Fin.', label: 'Education', detail: 'Xiamen University' },
     { value: '3', label: 'Current themes', detail: 'World models, agents, and finance' },
     { value: 'Open', label: 'Status', detail: 'Research collaboration and discussion' },
+  ],
+  interests: [
+    {
+      year: 'Interest',
+      title: 'Video Making',
+      description:
+        'I enjoy turning abstract ideas into short visual narratives through scripting, editing, and motion.',
+      posterImage: interestImageA,
+      videoHref: '/videos/video-making.mp4',
+    },
+    {
+      year: 'Interest',
+      title: 'Photography',
+      description:
+        'Photography helps me observe composition, light, and atmosphere with more patience and precision.',
+      posterImage: interestImageB,
+      videoHref: '/videos/photography.mp4',
+    },
+    {
+      year: 'Interest',
+      title: 'Music',
+      description:
+        'Music is an important part of my daily life and a constant source of rhythm, focus, and inspiration.',
+      posterImage: interestImageC,
+      videoHref: '/videos/music.mp4',
+    },
   ],
 }
