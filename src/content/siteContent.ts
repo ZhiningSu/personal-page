@@ -56,7 +56,6 @@ export type SiteContent = {
     summary: string
     location: string
     email: string
-    availability: string
     photoPath?: string
     photoAlt?: string
   }
@@ -98,12 +97,13 @@ export const siteContent: SiteContent = {
       'I received my M.Fin. degree from Xiamen University and currently focus on building realistic, mechanism-aware models for reasoning, simulation, and decision making in finance.',
     location: 'Xiamen / Remote',
     email: 'yandasu.su@gmail.com',
-    availability: 'Open to research collaboration and academic discussion',
     photoPath: '/profile-photo.jpg',
     photoAlt: 'Portrait of Yanda Su',
   },
   socialLinks: [
     { label: 'Email', href: 'mailto:yandasu.su@gmail.com', type: 'primary' },
+    { label: 'CV', href: '/cv.pdf', type: 'secondary' },
+    { label: 'GitHub', href: 'https://github.com/ZhiningSu', type: 'secondary' },
   ],
   about: [
     'My research interest lies at the intersection of world models, agentic systems, and financial intelligence. I am especially interested in how models can learn not only to predict outcomes, but also to approximate the underlying mechanisms that generate financial dynamics.',
