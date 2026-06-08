@@ -13,10 +13,10 @@ export default function WorksSection() {
         description="Current research directions and project placeholders aligned with world models, agents, and finance."
       />
 
-      <div className="space-y-6">
+      <div className="divide-y divide-black/10">
         {siteContent.works.map((work, index) => (
           <Reveal key={work.slug} delay={index * 0.08}>
-            <article className="border-b border-black/10 pb-6">
+            <article className="py-6">
               <div className="flex flex-wrap items-center justify-between gap-3 text-xs uppercase tracking-[0.24em] text-black/45">
                 <span>{work.year}</span>
                 <span>{work.tags.join(' · ')}</span>

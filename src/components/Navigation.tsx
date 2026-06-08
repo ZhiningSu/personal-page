@@ -1,4 +1,3 @@
-import { ArrowUpRight, Mail } from 'lucide-react'
 import { siteContent } from '@/content/siteContent'
 
 const sections = [
@@ -7,7 +6,6 @@ const sections = [
   { id: 'works', label: 'Research' },
   { id: 'interests', label: 'Interests' },
   { id: 'news', label: 'Updates' },
-  { id: 'contact', label: 'Contact' },
 ]
 
 export default function Navigation() {
@@ -37,14 +35,6 @@ export default function Navigation() {
               {primaryLink.label}
             </a>
           ) : null}
-          <a
-            href={`mailto:${siteContent.profile.email}`}
-            className="inline-flex items-center gap-2 text-sm text-black/62 transition hover:text-black"
-          >
-            <Mail className="h-4 w-4" />
-            Contact
-            <ArrowUpRight className="h-4 w-4" />
-          </a>
         </div>
       </div>
     </header>

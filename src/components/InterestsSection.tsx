@@ -12,10 +12,10 @@ export default function InterestsSection() {
         description="A few creative interests outside my core research work. Click the preview to open the corresponding video file."
       />
 
-      <div className="space-y-6">
+      <div className="divide-y divide-black/10">
         {siteContent.interests.map((interest, index) => (
           <Reveal key={interest.title} delay={index * 0.05}>
-            <article className="grid gap-5 border-b border-black/10 pb-6 sm:grid-cols-[220px_minmax(0,1fr)]">
+            <article className="grid gap-5 py-6 sm:grid-cols-[220px_minmax(0,1fr)]">
               <a
                 href={interest.videoHref}
                 target="_blank"

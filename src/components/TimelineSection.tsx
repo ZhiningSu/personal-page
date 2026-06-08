@@ -11,10 +11,10 @@ export default function TimelineSection() {
         description="A compact timeline of academic training, current research identity, and major themes."
       />
 
-      <div className="space-y-4">
+      <div className="divide-y divide-black/10">
         {siteContent.timeline.map((item, index) => (
           <Reveal key={`${item.year}-${item.title}`} delay={index * 0.06}>
-            <article className="grid gap-4 border-b border-black/10 py-5 sm:grid-cols-[160px_minmax(0,1fr)]">
+            <article className="grid gap-4 py-5 sm:grid-cols-[160px_minmax(0,1fr)]">
               <div className="flex items-start gap-4">
                 <div>
                   <p className="text-xs uppercase tracking-[0.28em] text-black/45">{item.year}</p>

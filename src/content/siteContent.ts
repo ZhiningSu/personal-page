@@ -57,6 +57,8 @@ export type SiteContent = {
     location: string
     email: string
     availability: string
+    photoPath?: string
+    photoAlt?: string
   }
   socialLinks: SocialLink[]
   about: string[]
@@ -97,6 +99,8 @@ export const siteContent: SiteContent = {
     location: 'Xiamen / Remote',
     email: 'yandasu.su@gmail.com',
     availability: 'Open to research collaboration and academic discussion',
+    photoPath: '/profile-photo.jpg',
+    photoAlt: 'Portrait of Yanda Su',
   },
   socialLinks: [
     { label: 'Email', href: 'mailto:yandasu.su@gmail.com', type: 'primary' },

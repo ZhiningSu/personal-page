@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import { ArrowRight, MapPin } from 'lucide-react'
 import Reveal from '@/components/Reveal'
 import { siteContent } from '@/content/siteContent'
 
 export default function HeroSection() {
+  const [photoAvailable, setPhotoAvailable] = useState(Boolean(siteContent.profile.photoPath))
+
   return (
     <section id="top" className="section-anchor pt-4">
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
@@ -45,7 +48,26 @@ export default function HeroSection() {
         </Reveal>
 
         <Reveal delay={0.15}>
-          <div className="mx-auto hidden max-w-md space-y-6 border-t border-black/10 pt-8 lg:block lg:w-full lg:max-w-none lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+          <div className="mx-auto hidden max-w-md space-y-8 border-t border-black/10 pt-8 lg:block lg:w-full lg:max-w-none lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+            {siteContent.profile.photoPath ? (
+              <div className="space-y-3">
+                <p className="text-xs uppercase tracking-[0.24em] text-black/40">Portrait</p>
+                {photoAvailable ? (
+                  <img
+                    src={siteContent.profile.photoPath}
+                    alt={siteContent.profile.photoAlt ?? `${siteContent.profile.name} portrait`}
+                    className="aspect-[4/5] w-full border border-black/10 object-cover"
+                    onError={() => setPhotoAvailable(false)}
+                  />
+                ) : (
+                  <div className="flex aspect-[4/5] items-center justify-center border border-dashed border-black/15 px-6 text-center text-sm leading-7 text-black/45">
+                    Add your photo at public/profile-photo.jpg
+                  </div>
+                )}
+              </div>
+            ) : null}
+
+            <div className="border-t border-black/10" />
             <p className="text-xs uppercase tracking-[0.24em] text-black/40">Overview</p>
             <div className="grid gap-4">
               {siteContent.metrics.map((metric) => (

@@ -14,7 +14,7 @@ describe('Homepage', () => {
 
     expect(screen.getByRole('heading', { name: 'Yanda Su' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Research' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Contact' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Interests' })).toBeInTheDocument()
   })
 })
 

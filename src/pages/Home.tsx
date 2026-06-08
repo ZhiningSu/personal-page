@@ -1,5 +1,4 @@
 import AboutSection from '@/components/AboutSection'
-import ContactSection from '@/components/ContactSection'
 import HeroSection from '@/components/HeroSection'
 import InterestsSection from '@/components/InterestsSection'
 import Navigation from '@/components/Navigation'
@@ -18,7 +17,6 @@ export default function Home() {
         <WorksSection />
         <InterestsSection />
         <NewsSection />
-        <ContactSection />
       </main>
       <footer className="mx-auto max-w-5xl px-5 pb-10 text-sm text-black/38 sm:px-8">
         Last updated in 2026.
