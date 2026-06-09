@@ -32,9 +32,6 @@ export default function AboutSection() {
               </span>
             ))}
           </div>
-          <div className="mt-8 border-t border-black/10 pt-6 text-sm leading-7 text-black/58">
-            The current version is a concise research homepage and can be updated further as publications, CV, and scholar links become available.
-          </div>
         </Reveal>
       </div>
     </section>

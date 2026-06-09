@@ -5,7 +5,7 @@ const sections = [
   { id: 'timeline', label: 'Experience' },
   { id: 'works', label: 'Research' },
   { id: 'interests', label: 'Interests' },
-  { id: 'news', label: 'Updates' },
+  { id: 'statement', label: 'Statement' },
 ]
 
 export default function Navigation() {

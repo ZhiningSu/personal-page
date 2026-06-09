@@ -29,8 +29,8 @@ export type WorkItem = {
   content: WorkBlock[]
 }
 
-export type NewsItem = {
-  date: string
+export type StatementItem = {
+  title: string
   content: string
 }
 
@@ -63,7 +63,7 @@ export type SiteContent = {
   about: string[]
   timeline: TimelineItem[]
   works: WorkItem[]
-  news: NewsItem[]
+  statement: StatementItem[]
   themes: string[]
   metrics: MetricItem[]
   interests: InterestItem[]
@@ -92,9 +92,9 @@ export const siteContent: SiteContent = {
     name: 'Yanda Su',
     title: 'Independent Researcher',
     statement:
-      'I am an independent researcher working on world models, agents, and computational approaches to understanding complex financial systems.',
+      'I build AI/ML-oriented software prototypes for simulation, reasoning, and decision support, with a focus on turning complex ideas into usable systems.',
     summary:
-      'I received my M.Fin. degree from Xiamen University and currently focus on building realistic, mechanism-aware models for reasoning, simulation, and decision making in finance.',
+      'With graduate training in finance and ongoing work on world models, agents, and computational pipelines, I am interested in software engineering roles that combine machine learning, system integration, and rigorous problem solving.',
     location: 'Xiamen / Remote',
     email: 'yandasu.su@gmail.com',
     photoPath: '/profile-photo.jpg',
@@ -106,9 +106,9 @@ export const siteContent: SiteContent = {
     { label: 'GitHub', href: 'https://github.com/ZhiningSu', type: 'secondary' },
   ],
   about: [
-    'My research interest lies at the intersection of world models, agentic systems, and financial intelligence. I am especially interested in how models can learn not only to predict outcomes, but also to approximate the underlying mechanisms that generate financial dynamics.',
-    'Rather than treating finance as a pure forecasting problem, I view it as a structured decision environment with latent states, evolving constraints, and interacting agents. This motivates a modeling paradigm that is closer to simulation, reasoning, and strategy evaluation than to point prediction alone.',
-    'My current work explores how a model can build an internal representation of the financial world, roll forward plausible trajectories, compare candidate decisions, and identify higher-quality strategies under realistic assumptions.',
+    'My work sits between applied machine learning, software prototyping, and complex system modeling. I am especially interested in how AI systems can function not only as models, but as reliable components inside larger software workflows.',
+    'I enjoy turning ambiguous problems into structured systems: designing pipelines, building internal tools, iterating on evaluation logic, and connecting model behavior with practical decision processes. This is what draws me to simulation, workflow improvement, and end-to-end system design.',
+    'I bring a strong sense of analytical discipline, curiosity, and execution to technical work. My current projects combine Python-based development, model experimentation, and system-level thinking in ways that aim to improve both efficiency and quality.',
   ],
   timeline: [
     {
@@ -250,16 +250,28 @@ export const siteContent: SiteContent = {
       ],
     },
   ],
-  news: [
-    { date: '2026', content: 'Building a personal research page focused on world models, agents, and finance.' },
-    { date: '2026', content: 'Organizing current projects around simulation, planning, and mechanism-aware modeling.' },
-    { date: '2026', content: 'Preparing a clearer research narrative that connects financial modeling with agent-based reasoning.' },
+  statement: [
+    {
+      title: 'Creative Builder',
+      content:
+        'I am a highly creative person who enjoys transforming abstract ideas into concrete systems, workflows, and products. I am most energized when I can combine technical depth with original thinking to solve difficult problems in a clean and effective way.',
+    },
+    {
+      title: 'High Energy, High Standards',
+      content:
+        'I bring sustained energy to my work and care deeply about execution quality. I tend to hold myself to a high standard, iterate quickly, and keep refining details until a solution is not only functional, but genuinely strong.',
+    },
+    {
+      title: 'Long-Term Vision',
+      content:
+        'I believe technology can fundamentally reshape how people live and work. I want to build products that create real change in human life, and I am committed to continuously learning, pursuing ambitious goals, and turning vision into reality through disciplined execution.',
+    },
   ],
-  themes: ['World Models', 'Agents', 'Financial Systems', 'Simulation', 'Planning', 'Mechanism-Aware Modeling'],
+  themes: ['Applied Machine Learning', 'Software Systems', 'Simulation', 'Agents', 'Workflow Design', 'Problem Solving'],
   metrics: [
-    { value: 'M.Fin.', label: 'Education', detail: 'Xiamen University' },
-    { value: '3', label: 'Current themes', detail: 'World models, agents, and finance' },
-    { value: 'Open', label: 'Status', detail: 'Research collaboration and discussion' },
+    { value: 'M.Fin.', label: 'Graduate training', detail: 'Xiamen University' },
+    { value: 'AI/ML', label: 'Current focus', detail: 'Models, systems, and workflows' },
+    { value: 'End-to-end', label: 'Working style', detail: 'Research, prototyping, and iteration' },
   ],
   interests: [
     {
